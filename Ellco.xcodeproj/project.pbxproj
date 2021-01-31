@@ -13,6 +13,10 @@
 		A77228E225C69C6A00B4EA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77228E025C69C6A00B4EA01 /* Main.storyboard */; };
 		A77228E425C69C6C00B4EA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77228E325C69C6C00B4EA01 /* Assets.xcassets */; };
 		A77228E725C69C6C00B4EA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77228E525C69C6C00B4EA01 /* LaunchScreen.storyboard */; };
+		A77228FC25C6A32F00B4EA01 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77228FB25C6A32F00B4EA01 /* Ticket.swift */; };
+		A772290025C6A60800B4EA01 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77228FF25C6A60800B4EA01 /* MainPresenter.swift */; };
+		A772290325C6A67900B4EA01 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = A772290225C6A67900B4EA01 /* Api.swift */; };
+		A772290825C6A6B300B4EA01 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A772290725C6A6B300B4EA01 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A77228E325C69C6C00B4EA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A77228E625C69C6C00B4EA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A77228E825C69C6C00B4EA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77228FB25C6A32F00B4EA01 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		A77228FF25C6A60800B4EA01 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		A772290225C6A67900B4EA01 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		A772290725C6A6B300B4EA01 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,113 @@
 			children = (
 				A77228DA25C69C6A00B4EA01 /* AppDelegate.swift */,
 				A77228DC25C69C6A00B4EA01 /* SceneDelegate.swift */,
-				A77228DE25C69C6A00B4EA01 /* ViewController.swift */,
-				A77228E025C69C6A00B4EA01 /* Main.storyboard */,
+				A77228F925C69D7000B4EA01 /* Networking */,
+				A77228EF25C69D0D00B4EA01 /* Screens */,
 				A77228E325C69C6C00B4EA01 /* Assets.xcassets */,
 				A77228E525C69C6C00B4EA01 /* LaunchScreen.storyboard */,
 				A77228E825C69C6C00B4EA01 /* Info.plist */,
 			);
 			path = Ellco;
+			sourceTree = "<group>";
+		};
+		A77228EF25C69D0D00B4EA01 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A77228F525C69D4200B4EA01 /* DetailScreen */,
+				A77228F125C69D2500B4EA01 /* MainScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A77228F125C69D2500B4EA01 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A77228F425C69D3B00B4EA01 /* Model */,
+				A77228F325C69D3300B4EA01 /* Presenter */,
+				A77228F225C69D2E00B4EA01 /* View */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		A77228F225C69D2E00B4EA01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A77228E025C69C6A00B4EA01 /* Main.storyboard */,
+				A77228DE25C69C6A00B4EA01 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A77228F325C69D3300B4EA01 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A77228FF25C6A60800B4EA01 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A77228F425C69D3B00B4EA01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A77228FB25C6A32F00B4EA01 /* Ticket.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A77228F525C69D4200B4EA01 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A77228F825C69D6600B4EA01 /* Presenter */,
+				A77228F725C69D6100B4EA01 /* Model */,
+				A77228F625C69D5900B4EA01 /* View */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		A77228F625C69D5900B4EA01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A77228F725C69D6100B4EA01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A77228F825C69D6600B4EA01 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A77228F925C69D7000B4EA01 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A772290625C6A6A200B4EA01 /* NetworkManager */,
+				A77228FA25C69D9200B4EA01 /* API */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A77228FA25C69D9200B4EA01 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A772290225C6A67900B4EA01 /* Api.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A772290625C6A6A200B4EA01 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				A772290725C6A6B300B4EA01 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +245,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A772290825C6A6B300B4EA01 /* NetworkManager.swift in Sources */,
+				A772290325C6A67900B4EA01 /* Api.swift in Sources */,
+				A772290025C6A60800B4EA01 /* MainPresenter.swift in Sources */,
 				A77228DF25C69C6A00B4EA01 /* ViewController.swift in Sources */,
 				A77228DB25C69C6A00B4EA01 /* AppDelegate.swift in Sources */,
 				A77228DD25C69C6A00B4EA01 /* SceneDelegate.swift in Sources */,
+				A77228FC25C6A32F00B4EA01 /* Ticket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
