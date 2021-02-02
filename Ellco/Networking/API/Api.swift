@@ -8,5 +8,7 @@
 import Foundation
 
 enum Api {
-    static let urt = "https://lk.ellco.ru:8000/bug_tracker/"
+    static let url = "https://lk.ellco.ru:8000/bug_tracker/"
 }
+
+

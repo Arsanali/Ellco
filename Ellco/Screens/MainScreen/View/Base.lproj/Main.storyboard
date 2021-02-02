@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Жалобы-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ellco" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,13 +20,42 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="85" id="4O3-bC-M2q">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="85" id="4O3-bC-M2q" customClass="MainCell" customModule="Ellco" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4O3-bC-M2q" id="vxr-5q-L5y">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="khj-RS-L8h">
+                                                    <rect key="frame" x="16" y="6" width="382" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-LY-aGr">
+                                                    <rect key="frame" x="16" y="46" width="382" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="t0k-5H-IKK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1hf-LY-aGr" firstAttribute="leading" secondItem="vxr-5q-L5y" secondAttribute="leading" constant="16" id="0F3-2U-Lpl"/>
+                                                <constraint firstAttribute="trailing" secondItem="khj-RS-L8h" secondAttribute="trailing" constant="16" id="0Ke-M3-Qz6"/>
+                                                <constraint firstAttribute="trailing" secondItem="1hf-LY-aGr" secondAttribute="trailing" constant="16" id="4ZB-KC-780"/>
+                                                <constraint firstItem="khj-RS-L8h" firstAttribute="top" secondItem="vxr-5q-L5y" secondAttribute="top" constant="6" id="AHH-vv-tsr"/>
+                                                <constraint firstItem="1hf-LY-aGr" firstAttribute="top" secondItem="khj-RS-L8h" secondAttribute="bottom" constant="19.5" id="l3d-vO-HWK"/>
+                                                <constraint firstItem="khj-RS-L8h" firstAttribute="leading" secondItem="vxr-5q-L5y" secondAttribute="leading" constant="16" id="rEG-H7-FZz"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="1hf-LY-aGr" id="L1W-U7-LAk"/>
+                                            <outlet property="nameLabel" destination="khj-RS-L8h" id="biH-xf-xll"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -40,7 +69,12 @@
                             <constraint firstItem="YI7-gR-uG4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wzg-Y0-1xs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WB9-4Y-3ca"/>
+                    <navigationItem key="navigationItem" title="Жалобы" largeTitleDisplayMode="always" id="WB9-4Y-3ca">
+                        <barButtonItem key="backBarButtonItem" title=" " id="xIC-i0-aRH"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="YI7-gR-uG4" id="WCu-aW-8Bv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,8 +85,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kGD-Uc-Cmv" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OEd-x2-6nt">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="OEd-x2-6nt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

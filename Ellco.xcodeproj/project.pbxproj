@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C961D2E98004455720D0A7E /* Pods_Ellco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACF74BA79758E774B1400BA /* Pods_Ellco.framework */; };
 		A77228DB25C69C6A00B4EA01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77228DA25C69C6A00B4EA01 /* AppDelegate.swift */; };
 		A77228DD25C69C6A00B4EA01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77228DC25C69C6A00B4EA01 /* SceneDelegate.swift */; };
 		A77228DF25C69C6A00B4EA01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77228DE25C69C6A00B4EA01 /* ViewController.swift */; };
@@ -17,9 +18,15 @@
 		A772290025C6A60800B4EA01 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77228FF25C6A60800B4EA01 /* MainPresenter.swift */; };
 		A772290325C6A67900B4EA01 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = A772290225C6A67900B4EA01 /* Api.swift */; };
 		A772290825C6A6B300B4EA01 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A772290725C6A6B300B4EA01 /* NetworkManager.swift */; };
+		A772291125C6BF3E00B4EA01 /* DitailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A772291025C6BF3E00B4EA01 /* DitailVC.swift */; };
+		A772291425C6BFB200B4EA01 /* DitailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A772291325C6BFB200B4EA01 /* DitailVC.storyboard */; };
+		A772291825C6C09000B4EA01 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A772291725C6C09000B4EA01 /* MainCell.swift */; };
+		A7B7179025C6E08D00DCA69D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7178F25C6E08D00DCA69D /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2345A9BA8D7E0394B8432E91 /* Pods-Ellco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ellco.debug.xcconfig"; path = "Target Support Files/Pods-Ellco/Pods-Ellco.debug.xcconfig"; sourceTree = "<group>"; };
+		4AE332F4013CD76F72B77DB3 /* Pods-Ellco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ellco.release.xcconfig"; path = "Target Support Files/Pods-Ellco/Pods-Ellco.release.xcconfig"; sourceTree = "<group>"; };
 		A77228D725C69C6A00B4EA01 /* Ellco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ellco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77228DA25C69C6A00B4EA01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A77228DC25C69C6A00B4EA01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +39,11 @@
 		A77228FF25C6A60800B4EA01 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		A772290225C6A67900B4EA01 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		A772290725C6A6B300B4EA01 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A772291025C6BF3E00B4EA01 /* DitailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DitailVC.swift; sourceTree = "<group>"; };
+		A772291325C6BFB200B4EA01 /* DitailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DitailVC.storyboard; sourceTree = "<group>"; };
+		A772291725C6C09000B4EA01 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		A7B7178F25C6E08D00DCA69D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACF74BA79758E774B1400BA /* Pods_Ellco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ellco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C961D2E98004455720D0A7E /* Pods_Ellco.framework in Frameworks */,
+				A7B7179025C6E08D00DCA69D /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +64,8 @@
 			children = (
 				A77228D925C69C6A00B4EA01 /* Ellco */,
 				A77228D825C69C6A00B4EA01 /* Products */,
+				F80E78FE6DDD9DE923DEF2CB /* Pods */,
+				FC72F6AAC67D0BB9B748E684 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +113,7 @@
 		A77228F225C69D2E00B4EA01 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A772291625C6C07600B4EA01 /* MainCell */,
 				A77228E025C69C6A00B4EA01 /* Main.storyboard */,
 				A77228DE25C69C6A00B4EA01 /* ViewController.swift */,
 			);
@@ -122,8 +139,6 @@
 		A77228F525C69D4200B4EA01 /* DetailScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A77228F825C69D6600B4EA01 /* Presenter */,
-				A77228F725C69D6100B4EA01 /* Model */,
 				A77228F625C69D5900B4EA01 /* View */,
 			);
 			path = DetailScreen;
@@ -132,22 +147,10 @@
 		A77228F625C69D5900B4EA01 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A772291025C6BF3E00B4EA01 /* DitailVC.swift */,
+				A772291325C6BFB200B4EA01 /* DitailVC.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A77228F725C69D6100B4EA01 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A77228F825C69D6600B4EA01 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		A77228F925C69D7000B4EA01 /* Networking */ = {
@@ -175,6 +178,32 @@
 			path = NetworkManager;
 			sourceTree = "<group>";
 		};
+		A772291625C6C07600B4EA01 /* MainCell */ = {
+			isa = PBXGroup;
+			children = (
+				A772291725C6C09000B4EA01 /* MainCell.swift */,
+			);
+			path = MainCell;
+			sourceTree = "<group>";
+		};
+		F80E78FE6DDD9DE923DEF2CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2345A9BA8D7E0394B8432E91 /* Pods-Ellco.debug.xcconfig */,
+				4AE332F4013CD76F72B77DB3 /* Pods-Ellco.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC72F6AAC67D0BB9B748E684 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7B7178F25C6E08D00DCA69D /* Alamofire.framework */,
+				FACF74BA79758E774B1400BA /* Pods_Ellco.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A77228EB25C69C6C00B4EA01 /* Build configuration list for PBXNativeTarget "Ellco" */;
 			buildPhases = (
+				0523C89C44C928D21485A2CF /* [CP] Check Pods Manifest.lock */,
 				A77228D325C69C6A00B4EA01 /* Sources */,
 				A77228D425C69C6A00B4EA01 /* Frameworks */,
 				A77228D525C69C6A00B4EA01 /* Resources */,
+				01917410153D332F54CA52DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,11 +265,54 @@
 			files = (
 				A77228E725C69C6C00B4EA01 /* LaunchScreen.storyboard in Resources */,
 				A77228E425C69C6C00B4EA01 /* Assets.xcassets in Resources */,
+				A772291425C6BFB200B4EA01 /* DitailVC.storyboard in Resources */,
 				A77228E225C69C6A00B4EA01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01917410153D332F54CA52DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ellco/Pods-Ellco-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ellco/Pods-Ellco-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ellco/Pods-Ellco-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0523C89C44C928D21485A2CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ellco-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A77228D325C69C6A00B4EA01 /* Sources */ = {
@@ -246,12 +320,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A772290825C6A6B300B4EA01 /* NetworkManager.swift in Sources */,
+				A772291125C6BF3E00B4EA01 /* DitailVC.swift in Sources */,
 				A772290325C6A67900B4EA01 /* Api.swift in Sources */,
 				A772290025C6A60800B4EA01 /* MainPresenter.swift in Sources */,
 				A77228DF25C69C6A00B4EA01 /* ViewController.swift in Sources */,
 				A77228DB25C69C6A00B4EA01 /* AppDelegate.swift in Sources */,
 				A77228DD25C69C6A00B4EA01 /* SceneDelegate.swift in Sources */,
 				A77228FC25C6A32F00B4EA01 /* Ticket.swift in Sources */,
+				A772291825C6C09000B4EA01 /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -383,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -395,6 +471,7 @@
 		};
 		A77228EC25C69C6C00B4EA01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2345A9BA8D7E0394B8432E91 /* Pods-Ellco.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -414,6 +491,7 @@
 		};
 		A77228ED25C69C6C00B4EA01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE332F4013CD76F72B77DB3 /* Pods-Ellco.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
